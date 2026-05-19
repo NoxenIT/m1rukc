@@ -279,3 +279,56 @@ h1 {
 .game:hover::after {
   opacity: 1;
 }
+
+/* PC */
+.pc h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #f3efff;
+}
+
+.pc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pc-item {
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  transition: 0.25s;
+}
+
+.pc-item:hover {
+  transform: translateY(-4px);
+
+  background: rgba(180,140,255,0.14);
+
+  border-color: rgba(180,140,255,0.25);
+}
+
+.pc-item span {
+  display: block;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  color: #cfc8e8;
+
+  margin-bottom: 8px;
+}
+
+.pc-item p {
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
