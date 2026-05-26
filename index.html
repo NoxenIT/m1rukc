@@ -15,6 +15,7 @@
 <body>
 
   <div class="background"></div>
+  <div class="rotating-light"></div>
   <div class="glow glow1"></div>
   <div class="glow glow2"></div>
   <div class="noise"></div>
@@ -40,38 +41,20 @@
 
     </header>
 
-    <!-- GAMES -->
-<section class="games">
+    <!-- BUTTONS -->
+<section class="quick-buttons">
 
-  <h2>Во что играю</h2>
+  <button class="open-btn" onclick="openModal('gamesModal')">
+    Игры
+  </button>
 
-  <div class="games-grid">
-
-    <div class="game">
-      <img src="assets/games/cs2.jpg" alt="CS2">
-      <p>CS2</p>
-    </div>
-
-    <div class="game">
-      <img src="assets/games/minecraft.jpg" alt="Minecraft">
-      <p>Minecraft</p>
-    </div>
-
-    <div class="game">
-      <img src="assets/games/rust.jpg" alt="Rust">
-      <p>Rust</p>
-    </div>
-
-    <div class="game">
-      <img src="assets/games/majestic.jpg" alt="Majestic RP">
-      <p>Majestic RP</p>
-    </div>
-
-  </div>
+  <button class="open-btn" onclick="openModal('medalsModal')">
+    Медальки
+  </button>
 
 </section>
 
-    <section class="pc">
+<section class="pc">
 
   <h2>ПК</h2>
 
@@ -94,19 +77,119 @@
 
   </div>
 
-</section>
-    
     <!-- LINKS -->
-    <section class="links">
+    <section class="links-section">
 
-      <a href="https://t.me/m1rukc" target="_blank">Мой тг акк</a>
-      <a href="https://t.me/+f4H80WWpiG84Nzc6" target="_blank">Мой ТГК</a>
-      <a href="https://steamcommunity.com/profiles/76561199584771868/" target="_blank">Steam</a>
+  <h2>Ссылки</h2>
+
+  <div class="links">
+
+      <a href="https://t.me/m1rukc" target="_blank">✈ Мой Telegram</a>
+      <a href="https://t.me/+f4H80WWpiG84Nzc6" target="_blank">📢 Telegram канал</a>
+      <a href="https://steamcommunity.com/profiles/76561199584771868/" target="_blank">🎮 Steam</a>
       <a href="https://app.scope.gg/ru/progress/1624506140?src_name=shareCode#general" target="_blank">Стата</a>
 
+      </div>
+      
     </section>
 
   </main>
+<!-- GAMES MODAL -->
+<div class="modal" id="gamesModal">
+
+  <div class="modal-box">
+
+    <div class="modal-top">
+      <h2>Игры</h2>
+
+      <button class="close-btn" onclick="closeModal('gamesModal')">
+        ✕
+      </button>
+    </div>
+
+    <div class="games-grid">
+
+      <div class="game">
+        <img src="assets/games/cs2.jpg">
+        <p>CS2</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/minecraft.jpg">
+        <p>Minecraft</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/rust.jpg">
+        <p>Rust</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/majestic.jpg">
+        <p>Majestic RP</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/endovice.jpg">
+        <p>ENDO VICE</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/beamng.jpg">
+        <p>BeamNG.drive</p>
+      </div>
+
+      <div class="game">
+        <img src="assets/games/gmod.jpg">
+        <p>Garry's Mod</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- MEDALS MODAL -->
+<div class="modal" id="medalsModal">
+
+  <div class="modal-box medals-box">
+
+    <div class="modal-top">
+      <h2>Медальки</h2>
+
+      <button class="close-btn" onclick="closeModal('medalsModal')">
+        ✕
+      </button>
+    </div>
+
+    <div class="medals-grid">
+
+      <div class="medal rare">
+        <div class="medal-inner">
+          <div class="medal-circle"></div>
+
+          <h3>Король лоу таба</h3>
+          <p>легендарное достижение</p>
+        </div>
+      </div>
+
+      <div class="medal epic">
+        <div class="medal-inner">
+          <div class="medal-circle"></div>
+
+          <h3>Смерть в нищете</h3>
+          <p>редкое достижение</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
